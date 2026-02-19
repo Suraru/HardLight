@@ -32,8 +32,8 @@
 
 - type: trait
   id: BatTransformation
-  name: hl-trait-bat-transformation-name
-  description: hl-trait-bat-transformation-desc
+  name: hl-trait-vampire-bat-transformation-name
+  description: hl-vampire-trait-bat-transformation-desc
   category: Supernatural
   cost: 5
   requiredTraits:
@@ -41,8 +41,8 @@
 
 - type: trait
   id: UVWeakness
-  name: hl-trait-uv-weakness-name
-  description: hl-trait-uv-weakness-desc
+  name: hl-trait-vampire-uv-weakness-name
+  description: hl-trait-vampire-uv-weakness-desc
   category: Supernatural
   cost: -5
   requiredTraits:
@@ -50,23 +50,12 @@
 
 - type: trait
   id: LightWeakness
-  name: hl-trait-light-weakness-name
-  description: hl-trait-light-weakness-desc
+  name: hl-trait-vampire-light-weakness-name
+  description: hl-trait-vampire-light-weakness-desc
   category: Supernatural
   cost: -5
   requiredTraits:
   - Vampire
-
-# Changeling Sub-Traits
-
-- type: trait
-  id: Sting
-  name: hl-trait-sting-name
-  description: hl-trait-sting-desc
-  category: Supernatural
-  cost: 5
-  requiredTraits:
-  - Changeling
 
 # Werewolf Sub-Traits
 
@@ -78,3 +67,95 @@
   cost: 5
   requiredTraits:
   - Werewolf
+
+# Changeling Sub-Traits
+
+- type: trait
+  id: CLArmblade
+  name: hl-trait-changeling-armblade-name
+  description: hl-trait-changeling-armblade-desc
+  category: Supernatural
+  cost: 5
+  requiredTraits:
+  - Changeling
+
+- type: trait
+  id: CLArmclaw
+  name: hl-trait-changeling-armclaw-name
+  description: hl-trait-changeling-armclaw-desc
+  category: Supernatural
+  cost: 5
+  requiredTraits:
+  - Changeling
+
+- type: trait
+  id: CLArmhammer
+  name: hl-trait-changeling-armhammer-name
+  description: hl-trait-changeling-armhammer-desc
+  category: Supernatural
+  cost: 5
+  requiredTraits:
+  - Changeling
+
+- type: trait
+  id: CLPlaydead
+  name: hl-trait-changeling-playdead-name
+  description: hl-trait-changeling-playdead-desc
+  category: Supernatural
+  cost: 5
+  requiredTraits:
+  - Changeling
+
+- type: trait
+  id: CLScreech
+  name: hl-trait-changeling-screech-name
+  description: hl-trait-changeling-screech-desc
+  category: Supernatural
+  cost: 10
+  requiredTraits:
+  - Changeling
+
+- type: trait
+  id: CLThermalEyes
+  name: hl-trait-changeling-thermaleyes-name
+  description: hl-trait-changeling-thermaleyes-desc
+  category: Supernatural
+  cost: 2
+  requiredTraits:
+  - Changeling
+
+- type: trait
+  id: CLHealingFactor
+  name: hl-trait-changeling-healing-name
+  description: hl-trait-changeling-healing-desc
+  category: Supernatural
+  cost: 5
+  requiredTraits:
+  - Changeling
+
+- type: trait
+  id: CLChitinArmor
+  name: hl-trait-changeling-chitin-name
+  description: hl-trait-changeling-chitin-desc
+  category: Supernatural
+  cost: -5
+  requiredTraits:
+  - Changeling
+
+- type: trait
+  id: CLFireVurn
+  name: hl-trait-changeling-firevurn-name
+  description: hl-trait-changeling-firevurn-desc
+  category: Supernatural
+  cost: -5
+  requiredTraits:
+  - Changeling
+
+- type: trait
+  id: CLAcidVurn
+  name: hl-trait-changeling-acidvurn-name
+  description: hl-trait-changeling-acidvurn-desc
+  category: Supernatural
+  cost: -5
+  requiredTraits:
+  - Changeling

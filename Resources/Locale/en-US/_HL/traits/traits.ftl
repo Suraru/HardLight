@@ -41,25 +41,52 @@ pooltoy-text = You're a living inflatable, whether by some weird mutation or by 
 hl-trait-category-supernatural = Supernatural
 
 hl-trait-vampire-name = Vampire
-hl-trait-vampire-desc = You are an undead vampire who can only feed their hunger with blood. You are immune to airloss damage, but may be hunted by the crew.
-
-hl-trait-changeling-name = Changeling
-hl-trait-changeling-desc = You are a shapeless creature who has taken the form of a crewmate. You can only feed your hunger by stealing the DNA of others.
+hl-trait-vampire-desc = You are an undead vampire who can only feed their hunger with blood. You are immune to airloss damage, but are weak to silver.
 
 hl-trait-werewolf-name = Werewolf
-hl-trait-werewolf-desc = Exposure to UV light can transform you into a powerful but mindless creature that attacks everyone in sight.
+hl-trait-werewolf-desc = Exposure to the sun or UV light can transform you into a powerful but mindless creature that attacks everyone in sight. You are also weak to silver.
 
-hl-trait-bat-transformation-name = Bat Transformation
-hl-trait-bat-transformation-desc = You can transform into a bat at the cost of hunger.
+hl-trait-changeling-name = Changeling
+hl-trait-changeling-desc = You are a shapeless creature who can only feed their hunger by absorbing DNA from others. You are weak to silver, but can transform into your victims.
 
-hl-trait-uv-weakness-name = UV Weakness
-hl-trait-uv-weakness-desc = Exposure to the sun or UV lights will burn you.
+hl-trait-vampire-bat-transformation-name = Bat Transformation
+hl-trait-vampire-bat-transformation-desc = You can transform into a bat at the cost of hunger.
 
-hl-trait-light-weakness-name = Light Weakness
-hl-trait-light-weakness-desc = Bright lights will weaken you.
+hl-trait-vampire-uv-weakness-name = UV Weakness
+hl-trait-vampire-uv-weakness-desc = Exposure to the sun or UV lights will burn you.
 
-hl-trait-sting-name = Sting
-hl-trait-sting-desc = You can sting others.
+hl-trait-vampire-light-weakness-name = Light Weakness
+hl-trait-vampire-light-weakness-desc = Bright lights will weaken you.
 
 hl-trait-werewolf-transform-name = Transform at Will
 hl-trait-werewolf-transform-desc = You can transform yourself at will if you are fully fed.
+
+hl-trait-changeling-armblade-name = Armblade
+hl-trait-changeling-armblade-desc = Your arms can turn into blades to slice at others
+
+hl-trait-changeling-armclaw-name = Armclaw
+hl-trait-changeling-armclaw-desc = Your arms can turn into claws to stab at others
+
+hl-trait-changeling-armhammer-name = Armhammer
+hl-trait-changeling-armhammer-desc = Your arms can turn into a hammer to bludgeon others
+
+hl-trait-changeling-playdead-name = Playdead
+hl-trait-changeling-playdead-desc = You can reduce your functions to appear dead, and later revive at will.
+
+hl-trait-changeling-screech-name = EMP Screech
+hl-trait-changeling-screech-desc = You can screech out a shockwave that knocks others back and disables nearby electronics
+
+hl-trait-changeling-thermaleyes-name = Thermal Eyes
+hl-trait-changeling-thermaleyes-desc = You can see in the dark with toggable thermal vision
+
+hl-trait-changeling-healing-name = Healing Factor
+hl-trait-changeling-healing-desc = At the cost of hunger, you can increase your healing factor for brute and toxin damage
+
+hl-trait-changeling-chitin-name = Chitin Armor
+hl-trait-changeling-chitin-desc = Your skin is tougher than normal, allowing you to resist brute damage but it takes longer to inject chems in you
+
+hl-trait-changeling-firevurn-name = Fire Vurnability
+hl-trait-changeling-firevurn-desc = You take 50% more damage from heat sources
+
+hl-trait-changeling-acidvurn-name = Acid Vurnability
+hl-trait-changeling-acidvurn-desc = You take 50% more damage from caustic sources
