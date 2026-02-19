@@ -8436,41 +8436,6 @@ entities:
             277: 22,39
             278: 21,39
         - node:
-            color: '#FFFFFFFF'
-            id: SpaceStationSign1
-          decals:
-            1266: -13,2
-        - node:
-            color: '#FFFFFFFF'
-            id: SpaceStationSign2
-          decals:
-            1265: -12,2
-        - node:
-            color: '#FFFFFFFF'
-            id: SpaceStationSign3
-          decals:
-            4626: -11,2
-        - node:
-            color: '#FFFFFFFF'
-            id: SpaceStationSign4
-          decals:
-            1261: -10,2
-        - node:
-            color: '#FFFFFFFF'
-            id: SpaceStationSign5
-          decals:
-            1262: -9,2
-        - node:
-            color: '#FFFFFFFF'
-            id: SpaceStationSign6
-          decals:
-            1263: -8,2
-        - node:
-            color: '#FFFFFFFF'
-            id: SpaceStationSign7
-          decals:
-            1264: -7,2
-        - node:
             angle: -1.5707963267948966 rad
             color: '#FFFFFFFF'
             id: StandClear

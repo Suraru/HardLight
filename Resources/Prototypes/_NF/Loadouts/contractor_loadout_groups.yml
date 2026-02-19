@@ -589,7 +589,7 @@
   name: loadout-group-contractor-belt
   minLimit: 0
   loadouts:
-  #- ContractorClothingBeltSecurityWebbingChameleon
+  - ContractorClothingBeltChameleonCiv
   - ContractorClothingBeltPlant
   - ContractorClothingBeltPlantFilled
   - ContractorClothingBeltChef
@@ -1172,6 +1172,7 @@
   minLimit: 0
   maxLimit: 5
   loadouts:
+  - ContractorEncryptionKeyFreelance
   - ContractorEncryptionKeyTraffic
   - ContractorEncryptionKeyMedical
   - ContractorEncryptionKeyCargo

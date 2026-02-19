@@ -10177,48 +10177,6 @@ entities:
           decals:
             7702: 99.973526,25.08815
         - node:
-            zIndex: 1
-            color: '#FFFFFFFF'
-            id: SpaceStationSign1
-          decals:
-            8043: 103,76
-        - node:
-            zIndex: 1
-            color: '#FFFFFFFF'
-            id: SpaceStationSign2
-          decals:
-            8042: 104,76
-        - node:
-            zIndex: 1
-            color: '#FFFFFFFF'
-            id: SpaceStationSign3
-          decals:
-            8041: 105,76
-        - node:
-            zIndex: 1
-            color: '#FFFFFFFF'
-            id: SpaceStationSign4
-          decals:
-            8040: 106,76
-        - node:
-            zIndex: 1
-            color: '#FFFFFFFF'
-            id: SpaceStationSign5
-          decals:
-            8039: 107,76
-        - node:
-            zIndex: 1
-            color: '#FFFFFFFF'
-            id: SpaceStationSign6
-          decals:
-            8038: 108,76
-        - node:
-            zIndex: 1
-            color: '#FFFFFFFF'
-            id: SpaceStationSign7
-          decals:
-            8037: 109,76
-        - node:
             color: '#FFFFFFFF'
             id: StandClear
           decals:
