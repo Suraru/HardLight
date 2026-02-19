@@ -782,6 +782,20 @@ namespace Content.Client.Lobby.UI
                                 tooltipParts.Add($"You must not be: {string.Join(", ", names)}");
                         }
 
+                        // HardLight: Required traits
+                        if (trait.RequiredTraits.Count > 0)
+                        {
+                            var names = new List<string>();
+                            foreach (var reqId in trait.RequiredTraits)
+                            {
+                                if (_prototypeManager.TryIndex(reqId, out var reqProto))
+                                    names.Add($"[color=#FFD700]{Loc.GetString(reqProto.Name)}[/color]");
+                            }
+                            if (names.Count > 0)
+                                tooltipParts.Add($"Requires: {string.Join(", ", names)}");
+                        }
+                        // HardLight end
+
                         if (tooltipParts.Count > 0)
                             selector.SetTooltip(string.Join("\n", tooltipParts));
                     }
@@ -828,6 +842,30 @@ namespace Content.Client.Lobby.UI
                         else
                         {
                             Profile = Profile?.WithoutTraitPreference(trait.ID, _prototypeManager);
+
+                            // HardLight - Cascade deselect: remove any traits that required this one
+                            if (Profile != null)
+                            {
+                                var toRemove = new List<ProtoId<TraitPrototype>>();
+                                foreach (var selectedTraitId in Profile.TraitPreferences)
+                                {
+                                    if (!_prototypeManager.TryIndex<TraitPrototype>(selectedTraitId, out var selectedProto))
+                                        continue;
+
+                                    if (selectedProto.RequiredTraits.Contains(trait.ID))
+                                        toRemove.Add(selectedTraitId);
+                                }
+
+                                foreach (var removeId in toRemove)
+                                {
+                                    Profile = Profile.WithoutTraitPreference(removeId, _prototypeManager);
+
+                                    // Also uncheck the UI selector
+                                    if (allSelectors.TryGetValue(removeId, out var depSelector))
+                                        depSelector.Preference = false;
+                                }
+                            }
+                            // HardLight end
                         }
 
                         SetDirty();
@@ -1023,6 +1061,20 @@ namespace Content.Client.Lobby.UI
                         hide = true;
                     }
                 }
+
+                // HardLight - Hide traits whose required traits are not all selected
+                if (!hide && thisProto.RequiredTraits.Count > 0)
+                {
+                    foreach (var requiredId in thisProto.RequiredTraits)
+                    {
+                        if (!selected.Contains(requiredId))
+                        {
+                            hide = true;
+                            break;
+                        }
+                    }
+                }
+                // HardLight end
 
                 if (!hide)
                 {
@@ -1726,6 +1778,36 @@ namespace Content.Client.Lobby.UI
                 if (trait.SpeciesBlacklist.Contains(species))
                     toRemove.Add(traitId);
             }
+
+            // HardLight - Also remove traits whose required traits are not selected
+            // Iterate until stable since removing one trait may cascade
+            bool changed;
+            do
+            {
+                changed = false;
+                foreach (var traitId in Profile.TraitPreferences)
+                {
+                    if (toRemove.Contains(traitId))
+                        continue;
+
+                    if (!_prototypeManager.TryIndex(traitId, out TraitPrototype? trait))
+                        continue;
+
+                    if (trait.RequiredTraits.Count == 0)
+                        continue;
+
+                    foreach (var reqId in trait.RequiredTraits)
+                    {
+                        if (!Profile.TraitPreferences.Contains(reqId) || toRemove.Contains(reqId))
+                        {
+                            toRemove.Add(traitId);
+                            changed = true;
+                            break;
+                        }
+                    }
+                }
+            } while (changed);
+            // HardLight end
 
             foreach (var traitId in toRemove)
             {

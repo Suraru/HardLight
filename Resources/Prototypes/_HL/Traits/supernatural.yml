@@ -1,0 +1,80 @@
+- type: trait
+  id: Vampire
+  name: hl-trait-vampire-name
+  description: hl-trait-vampire-desc
+  category: Supernatural
+  cost: 1
+  mutuallyExclusiveTraits:
+  - Changeling
+  - Werewolf
+
+- type: trait
+  id: Changeling
+  name: hl-trait-changeling-name
+  description: hl-trait-changeling-desc
+  category: Supernatural
+  cost: 1
+  mutuallyExclusiveTraits:
+  - Vampire
+  - Werewolf
+
+- type: trait
+  id: Werewolf
+  name: hl-trait-werewolf-name
+  description: hl-trait-werewolf-desc
+  category: Supernatural
+  cost: 1
+  mutuallyExclusiveTraits:
+  - Vampire
+  - Changeling
+
+# Vampire Sub-Traits
+
+- type: trait
+  id: BatTransformation
+  name: hl-trait-bat-transformation-name
+  description: hl-trait-bat-transformation-desc
+  category: Supernatural
+  cost: 5
+  requiredTraits:
+  - Vampire
+
+- type: trait
+  id: UVWeakness
+  name: hl-trait-uv-weakness-name
+  description: hl-trait-uv-weakness-desc
+  category: Supernatural
+  cost: -5
+  requiredTraits:
+  - Vampire
+
+- type: trait
+  id: LightWeakness
+  name: hl-trait-light-weakness-name
+  description: hl-trait-light-weakness-desc
+  category: Supernatural
+  cost: -5
+  requiredTraits:
+  - Vampire
+
+# Changeling Sub-Traits
+
+- type: trait
+  id: Sting
+  name: hl-trait-sting-name
+  description: hl-trait-sting-desc
+  category: Supernatural
+  cost: 5
+  requiredTraits:
+  - Changeling
+
+# Werewolf Sub-Traits
+
+- type: trait
+  id: WerewolfTransformAtWill
+  name: hl-trait-werewolf-transform-name
+  description: hl-trait-werewolf-transform-desc
+  category: Supernatural
+  cost: 5
+  requiredTraits:
+  - Werewolf

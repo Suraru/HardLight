@@ -18,3 +18,9 @@
   id: Physical
   name: trait-category-physical
   maxTraitPoints: 10
+
+# Hardlight
+- type: traitCategory
+  id: Supernatural
+  name: hl-trait-category-supernatural
+  maxTraitPoints: 1
