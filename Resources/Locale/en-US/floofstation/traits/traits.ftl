@@ -30,3 +30,12 @@ trait-barrel-breasts-desc = You are capable of such vast quantities of milk that
 
 trait-pisser-name = Pissing
 trait-pisser-desc = You're able to piss on or in things!
+
+trait-name-CumProducer = Cock
+trait-description-CumProducer = You have a schlong between your legs.
+
+trait-name-MilkProducer = Boobs
+trait-description-MilkProducer = You have a pair of large mammaries.
+
+trait-name-SquirtProducer = Slit
+trait-description-SquirtProducer = You have a pussy and or cloaca between your legs that produces eggs.

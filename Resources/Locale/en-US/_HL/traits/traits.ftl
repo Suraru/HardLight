@@ -37,3 +37,26 @@ hl-trait-egglayer-infertile-desc = You produce eggs very slowly and seldomly (50
 
 pooltoy-name = Pool Toy!
 pooltoy-text = You're a living inflatable, whether by some weird mutation or by being a synthetic being. You are quite resillient to blunt and naturally insulated, but are extra susceptible to pierce and slash, and you are easily knocked about by sudden forces!
+
+trait-category-lewd = Lewd
+
+trait-name-slowcummer = Slow Cummer
+trait-description-slowcummer = It takes you a while before you're ready to cum inside of someone.
+
+trait-name-fastcummer = Fast Cummer
+trait-description-fastcummer = You're sensitive and can reach orgasm quickly.
+
+trait-name-smallload = Small Load
+trait-description-smallload = You cum in tiny squirts.
+
+trait-name-largeload = Large Load
+trait-description-largeload = Your cum shots are bigger than normal.
+
+trait-name-hugeload = Huge Load
+trait-description-hugeload = Three pumps of this and your partner's belly will be noticably expanded.
+
+trait-name-smallballs = Small Balls
+trait-description-smallballs = You have tiny, laughable balls that hold a miniscule amount of cum.
+
+trait-name-smallbreasts = Small Breasts
+trait-description-smallbreasts = Welcome to the itty bitty titty committy. You can't make as much milk though.

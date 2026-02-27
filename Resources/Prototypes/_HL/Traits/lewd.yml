@@ -2,10 +2,13 @@
   id: EggLayerFertile
   name: hl-trait-egglayer-fertile-name
   description: hl-trait-egglayer-fertile-desc
-  category: Physical
+  category: LewdTraits
+  cost: 3
   mutuallyExclusiveTraits:
   - EggLayer
   - EggLayerInfertile
+  requiredTraits:
+  - VaginaHaver
   components:
     - type: LewdEggLaying
       eggSpawn:
@@ -21,10 +24,13 @@
   id: EggLayer
   name: hl-trait-egglayer-name
   description: hl-trait-egglayer-desc
-  category: Physical
+  category: LewdTraits
+  cost: 2
   mutuallyExclusiveTraits:
   - EggLayerFertile
   - EggLayerInfertile
+  requiredTraits:
+  - VaginaHaver
   components:
     - type: LewdEggLaying
       eggSpawn:
@@ -40,10 +46,13 @@
   id: EggLayerInfertile
   name: hl-trait-egglayer-infertile-name
   description: hl-trait-egglayer-infertile-desc
-  category: Physical
+  category: LewdTraits
+  cost: 1
   mutuallyExclusiveTraits:
   - EggLayerFertile
   - EggLayer
+  requiredTraits:
+  - VaginaHaver
   components:
     - type: LewdEggLaying
       eggSpawn:
@@ -54,3 +63,99 @@
       eggSlowThreshold: 10
       eggSlowMult: 0.5
       eggLayDelay: 5
+
+- type: trait
+  id: SlowCummer
+  name: trait-name-slowcummer
+  description: trait-description-slowcummer
+  category: LewdTraits
+  requiredTraits:
+  - PenisHaver
+  mutuallyExclusiveTraits:
+  - FastCummer
+
+- type: trait
+  id: FastCummer
+  name: trait-name-fastcummer
+  description: trait-description-fastcummer
+  category: LewdTraits
+  requiredTraits:
+  - PenisHaver
+  mutuallyExclusiveTraits:
+  - SlowCummer
+
+- type: trait
+  id: SmallLoad
+  name: trait-name-smallload
+  description: trait-description-smallload
+  category: LewdTraits
+  cost: -1
+  requiredTraits:
+  - PenisHaver
+  mutuallyExclusiveTraits:
+  - LargeLoad
+  - HugeLoad
+
+- type: trait
+  id: LargeLoad
+  name: trait-name-largeload
+  description: trait-description-largeload
+  category: LewdTraits
+  cost: 2
+  requiredTraits:
+  - PenisHaver
+  mutuallyExclusiveTraits:
+  - SmallLoad
+  - HugeLoad
+
+- type: trait
+  id: HugeLoad
+  name: trait-name-hugeload
+  description: trait-description-hugeload
+  category: LewdTraits
+  cost: 3
+  requiredTraits:
+  - PenisHaver
+  mutuallyExclusiveTraits:
+  - SmallLoad
+  - LargeLoad
+
+- type: trait
+  id: SmallBalls
+  name: trait-name-smallballs
+  description: trait-description-smallballs
+  category: LewdTraits
+  cost: -1
+  requiredTraits:
+  - PenisHaver
+  mutuallyExclusiveTraits:
+  - CumProducer
+  - CumCascade
+  - BluespaceBalls
+  - BarrelBalls
+  - CumFlood
+  components:
+    - type: CumProducer
+      maxVol: 25
+      reVol: 1
+      reHunger: 1
+
+- type: trait
+  id: SmallBreasts
+  name: trait-name-smallbreasts
+  description: trait-description-smallbreasts
+  category: LewdTraits
+  cost: -1
+  requiredTraits:
+  - TitsHaver
+  mutuallyExclusiveTraits:
+  - MilkProducer
+  - MilkCascade
+  - MilkFlood
+  - BluespaceBreasts
+  - BarrelBreasts
+  components:
+    - type: MilkProducer
+      maxVol: 25
+      reVol: 1
+      reHunger: 1

@@ -64,10 +64,16 @@ public sealed partial class TraitPrototype : IPrototype, IComparable<TraitProtot
     public ProtoId<TraitCategoryPrototype>? Category;
 
         /// <summary>
-        ///     List of traits that ca't be taken together with this one.
+        ///     List of traits that can't be taken together with this one.
         /// </summary>
         [DataField]
         public HashSet<ProtoId<TraitPrototype>> MutuallyExclusiveTraits { get; private set; } = new();
+
+        /// <summary>
+        ///     List of traits that must be selected before this trait becomes available, w/ deselect if its removed
+        /// </summary>
+        [DataField]
+        public HashSet<ProtoId<TraitPrototype>> RequiredTraits { get; private set; } = new();
 
         /// <summary>
         ///     List of species that can't have this trait.

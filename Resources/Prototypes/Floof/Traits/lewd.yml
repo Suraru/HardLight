@@ -1,8 +1,35 @@
+# HL
+- type: trait
+  id: PenisHaver
+  name: trait-name-CumProducer
+  description: trait-description-CumProducer
+  category: LewdTraits
+  cost: 1
+
+# HL
+- type: trait
+  id: TitsHaver
+  name: trait-name-MilkProducer
+  description: trait-description-MilkProducer
+  category: LewdTraits
+  cost: 1
+
+# HL
+- type: trait
+  id: VaginaHaver
+  name: trait-name-SquirtProducer
+  description: trait-description-SquirtProducer
+  category: LewdTraits
+  cost: 1
+
 - type: trait
   id: CumProducer
   name: trait-cum-producer-name
   description: trait-cum-producer-desc
-  category: Physical
+  category: LewdTraits
+  cost: 1
+  requiredTraits:
+  - PenisHaver
   components:
     - type: CumProducer
       maxVol: 25
@@ -23,12 +50,16 @@
   id: CumCascade
   name: trait-cum-cascade-name
   description: trait-cum-cascade-desc
-  category: Physical
+  category: LewdTraits
+  cost: 2
+  requiredTraits:
+  - PenisHaver
   mutuallyExclusiveTraits:
   - CumProducer
   - CumFlood
   - BluespaceBalls
   - BarrelBalls
+  - SmallBalls
   components:
     - type: CumProducer
       maxVol: 100
@@ -39,12 +70,16 @@
   id: CumFlood
   name: trait-cum-flood-name
   description: trait-cum-flood-desc
-  category: Physical
+  category: LewdTraits
+  cost: 3
+  requiredTraits:
+  - PenisHaver
   mutuallyExclusiveTraits:
   - CumProducer
   - CumCascade
   - BluespaceBalls
   - BarrelBalls
+  - SmallBalls
   components:
     - type: CumProducer
       maxVol: 250
@@ -55,12 +90,16 @@
   id: BluespaceBalls
   name: trait-bluespace-balls-name
   description: trait-bluespace-balls-desc
-  category: Physical
+  category: LewdTraits
+  cost: 4
+  requiredTraits:
+  - PenisHaver
   mutuallyExclusiveTraits:
   - CumProducer
   - CumCascade
   - CumFlood
   - BarrelBalls
+  - SmallBalls
   components:
     - type: CumProducer
       maxVol: 1000
@@ -71,12 +110,16 @@
   id: BarrelBalls
   name: trait-barrel-balls-name
   description: trait-barrel-balls-desc
-  category: Physical
+  category: LewdTraits
+  cost: 5
+  requiredTraits:
+  - PenisHaver
   mutuallyExclusiveTraits:
   - CumProducer
   - CumCascade
   - CumFlood
   - BluespaceBalls
+  - SmallBalls
   components:
     - type: CumProducer
       maxVol: 15000
@@ -107,12 +150,16 @@
   id: MilkProducer
   name: trait-milk-producer-name
   description: trait-milk-producer-desc
-  category: Physical
+  category: LewdTraits
+  cost: 1
+  requiredTraits:
+  - TitsHaver
   mutuallyExclusiveTraits:
   - MilkCascade
   - MilkFlood
   - BluespaceBreasts
   - BarrelBreasts
+  - SmallBreasts
   components:
     - type: MilkProducer
       maxVol: 50
@@ -123,12 +170,16 @@
   id: MilkCascade
   name: trait-milk-cascade-name
   description: trait-milk-cascade-desc
-  category: Physical
+  category: LewdTraits
+  cost: 2
+  requiredTraits:
+  - TitsHaver
   mutuallyExclusiveTraits:
   - MilkProducer
   - MilkFlood
   - BluespaceBreasts
   - BarrelBreasts
+  - SmallBreasts
   components:
     - type: MilkProducer
       maxVol: 100
@@ -139,12 +190,16 @@
   id: MilkFlood
   name: trait-milk-flood-name
   description: trait-milk-flood-desc
-  category: Physical
+  category: LewdTraits
+  cost: 3
+  requiredTraits:
+  - TitsHaver
   mutuallyExclusiveTraits:
   - MilkProducer
   - MilkCascade
   - BluespaceBreasts
   - BarrelBreasts
+  - SmallBreasts
   components:
     - type: MilkProducer
       maxVol: 250
@@ -155,12 +210,16 @@
   id: BluespaceBreasts
   name: trait-bluespace-breasts-name
   description: trait-bluespace-breasts-desc
-  category: Physical
+  category: LewdTraits
+  cost: 4
+  requiredTraits:
+  - TitsHaver
   mutuallyExclusiveTraits:
   - MilkProducer
   - MilkCascade
   - MilkFlood
   - BarrelBreasts
+  - SmallBreasts
   components:
     - type: MilkProducer
       maxVol: 1000
@@ -171,12 +230,16 @@
   id: BarrelBreasts
   name: trait-barrel-breasts-name
   description: trait-barrel-breasts-desc
-  category: Physical
+  category: LewdTraits
+  cost: 5
+  requiredTraits:
+  - TitsHaver
   mutuallyExclusiveTraits:
   - MilkProducer
   - MilkCascade
   - MilkFlood
   - BluespaceBreasts
+  - SmallBreasts
   components:
     - type: MilkProducer
       maxVol: 15000
@@ -208,7 +271,7 @@
   id: Pisser
   name: trait-pisser-name
   description: trait-pisser-desc
-  category: Physical
+  category: LewdTraits
   components:
     - type: PissProducer
       maxVol: 100
